@@ -4,6 +4,7 @@
     --primary-text-color: #212121;
     --secondary-text-color:#757575;
     --thirdly-text-color: #FFFFFF;
+    --background-color:#2F303A;
 }
 body{
    font-family:"Roboto",sans-serif;
@@ -33,7 +34,8 @@ color: #212121;
 color:var(--accent-color) ;
 }
 
-.nav-link{
+.nav-link,
+.contact-link{
     
 font-style: normal;
 font-weight: 500;
@@ -46,6 +48,30 @@ color:var(--primary-text-color);
 }
 
 .nav-link:hover,
-.nav-link:focus{
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus{
     color: var(--accent-color);
+}
+.contact-link{
+    color: var(--secondary-text-color);
+}
+
+/* Hero section */
+
+.section{
+    background-color: var(--background-color);
+}
+.hero-title{
+    font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+/* or 136% */
+
+text-align: center;
+letter-spacing: 0.06em;
+/* Всі букви мають бути заголовні нижній тег*/
+text-transform: uppercase;
+color: var(--thirdly-text-color);
 }
